@@ -1,0 +1,184 @@
+{
+ "pairs": [
+  {
+   "contract_id": "CUAD-100",
+   "rule_id": "LIABILITY_CAP",
+   "expected": "ACCEPT"
+  },
+  {
+   "contract_id": "CUAD-010",
+   "rule_id": "LIABILITY_CAP",
+   "expected": "FLAG"
+  },
+  {
+   "contract_id": "CUAD-390",
+   "rule_id": "LIABILITY_CAP",
+   "expected": "FLAG"
+  },
+  {
+   "contract_id": "CUAD-050",
+   "rule_id": "UNCAPPED_LIABILITY",
+   "expected": "FLAG"
+  },
+  {
+   "contract_id": "CUAD-100",
+   "rule_id": "UNCAPPED_LIABILITY",
+   "expected": "FLAG"
+  },
+  {
+   "contract_id": "CUAD-180",
+   "rule_id": "UNCAPPED_LIABILITY",
+   "expected": "FLAG"
+  },
+  {
+   "contract_id": "CUAD-020",
+   "rule_id": "TERMINATION_CONVENIENCE",
+   "expected": "ACCEPT"
+  },
+  {
+   "contract_id": "CUAD-260",
+   "rule_id": "TERMINATION_CONVENIENCE",
+   "expected": "ACCEPT"
+  },
+  {
+   "contract_id": "CUAD-460",
+   "rule_id": "TERMINATION_CONVENIENCE",
+   "expected": "FLAG"
+  },
+  {
+   "contract_id": "CUAD-390",
+   "rule_id": "GOVERNING_LAW",
+   "expected": "ACCEPT"
+  },
+  {
+   "contract_id": "CUAD-000",
+   "rule_id": "GOVERNING_LAW",
+   "expected": "FLAG"
+  },
+  {
+   "contract_id": "CUAD-260",
+   "rule_id": "GOVERNING_LAW",
+   "expected": "FLAG"
+  },
+  {
+   "contract_id": "CUAD-030",
+   "rule_id": "IP_ASSIGNMENT",
+   "expected": "FLAG"
+  },
+  {
+   "contract_id": "CUAD-310",
+   "rule_id": "IP_ASSIGNMENT",
+   "expected": "FLAG"
+  },
+  {
+   "contract_id": "CUAD-470",
+   "rule_id": "IP_ASSIGNMENT",
+   "expected": "FLAG"
+  },
+  {
+   "contract_id": "CUAD-020",
+   "rule_id": "AUDIT_RIGHTS",
+   "expected": "ACCEPT"
+  },
+  {
+   "contract_id": "CUAD-230",
+   "rule_id": "AUDIT_RIGHTS",
+   "expected": "ACCEPT"
+  },
+  {
+   "contract_id": "CUAD-000",
+   "rule_id": "AUDIT_RIGHTS",
+   "expected": "FLAG"
+  },
+  {
+   "contract_id": "CUAD-030",
+   "rule_id": "NON_COMPETE",
+   "expected": "FLAG"
+  },
+  {
+   "contract_id": "CUAD-150",
+   "rule_id": "NON_COMPETE",
+   "expected": "ACCEPT"
+  },
+  {
+   "contract_id": "CUAD-000",
+   "rule_id": "NON_COMPETE",
+   "expected": "ACCEPT"
+  },
+  {
+   "contract_id": "CUAD-000",
+   "rule_id": "NO_SOLICIT_EMPLOYEES",
+   "expected": "FLAG"
+  },
+  {
+   "contract_id": "CUAD-030",
+   "rule_id": "NO_SOLICIT_EMPLOYEES",
+   "expected": "FLAG"
+  },
+  {
+   "contract_id": "CUAD-100",
+   "rule_id": "NO_SOLICIT_EMPLOYEES",
+   "expected": "ACCEPT"
+  },
+  {
+   "contract_id": "CUAD-150",
+   "rule_id": "MFN",
+   "expected": "REJECT"
+  },
+  {
+   "contract_id": "CUAD-390",
+   "rule_id": "MFN",
+   "expected": "REJECT"
+  },
+  {
+   "contract_id": "CUAD-000",
+   "rule_id": "MFN",
+   "expected": "ACCEPT"
+  },
+  {
+   "contract_id": "CUAD-030",
+   "rule_id": "CHANGE_OF_CONTROL",
+   "expected": "FLAG"
+  },
+  {
+   "contract_id": "CUAD-050",
+   "rule_id": "CHANGE_OF_CONTROL",
+   "expected": "FLAG"
+  },
+  {
+   "contract_id": "CUAD-000",
+   "rule_id": "CHANGE_OF_CONTROL",
+   "expected": "ACCEPT"
+  },
+  {
+   "contract_id": "CUAD-000",
+   "rule_id": "AUTO_RENEWAL",
+   "expected": "ACCEPT"
+  },
+  {
+   "contract_id": "CUAD-100",
+   "rule_id": "AUTO_RENEWAL",
+   "expected": "FLAG"
+  },
+  {
+   "contract_id": "CUAD-030",
+   "rule_id": "AUTO_RENEWAL",
+   "expected": "FLAG"
+  },
+  {
+   "contract_id": "CUAD-000",
+   "rule_id": "ANTI_ASSIGNMENT",
+   "expected": "FLAG"
+  },
+  {
+   "contract_id": "CUAD-020",
+   "rule_id": "ANTI_ASSIGNMENT",
+   "expected": "FLAG"
+  },
+  {
+   "contract_id": "CUAD-090",
+   "rule_id": "ANTI_ASSIGNMENT",
+   "expected": "FLAG"
+  }
+ ]
+}

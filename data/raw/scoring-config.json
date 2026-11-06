@@ -1,0 +1,21 @@
+{
+ "thresholds": {
+  "reject_bar": 85,
+  "flag_bar": 40
+ },
+ "route_bars": {
+  "escalate_score": 80,
+  "legal_score": 40
+ },
+ "contract_score_weights": {
+  "max_clause": 0.7,
+  "mean_clause": 0.3
+ },
+ "effort_minutes": {
+  "APPROVE": 10,
+  "SEND_TO_LEGAL": 45,
+  "ESCALATE": 90
+ },
+ "replay_date": "2026-11-06",
+ "tuning_note": "Thresholds grid-searched on the 36-pair golden set (reject_bar=85, flag_bar=40); tier_accuracy=1.0, precision=1.0, recall=1.0. Calibration only \u2014 the golden set is also the tuning set, so these are not held-out numbers."
+}
