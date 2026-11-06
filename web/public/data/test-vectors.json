@@ -1,0 +1,144 @@
+{
+ "vectors": [
+  {
+   "contract_id": "CUAD-100",
+   "rule_id": "LIABILITY_CAP",
+   "term_spans": [
+    "Except with regard to a breach of confidentiality, a party's indemnification obligations hereunder, or infringement of intellectual property rights, either party's total liability to the other party under this Agreement shall be limited to the amounts paid or payable by the Reseller to Todos during the twelve-month period preceding the interposition of the claim.",
+    "IN NO EVENT SHALL EITHER PARTY BE LIABLE TO THE OTHER PARTY FOR ANY INCIDENTAL, CONSEQUENTIAL, INDIRECT, SPECIAL, OR PUNITIVE DAMAGES (INCLUDING, BUT NOT LIMITED TO, LOST PROFITS, BUSINESS INTERRUPTION, LOSS OF BUSINESS INFORMATION OR OTHER PECUNIARY LOSS) REGARDLESS OF WHETHER SUCH LIABILITY IS BASED ON BREACH OF CONTRACT, TORT (INCLUDING NEGLIGENCE), STRICT LIABILITY, BREACH OF WARRANTIES, FAILURE OF ESSENTIAL PURPOSE OR OTHERWISE AND EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGES."
+   ],
+   "notice_spans": [],
+   "has_exception": true,
+   "expected_tier": "ACCEPT",
+   "expected_score": 10
+  },
+  {
+   "contract_id": "CUAD-050",
+   "rule_id": "UNCAPPED_LIABILITY",
+   "term_spans": [
+    "EXCEPT FOR [**], IN NO EVENT WILL EITHER PARTY BE LIABLE TO THE   OTHER PARTY FOR [**], EVEN IF SUCH PARTY WAS ADVISED OR AWARE OF THE POSSIBILITY OF SUCH   DAMAGES."
+   ],
+   "notice_spans": [],
+   "has_exception": true,
+   "expected_tier": "FLAG",
+   "expected_score": 60
+  },
+  {
+   "contract_id": "CUAD-460",
+   "rule_id": "TERMINATION_CONVENIENCE",
+   "term_spans": [
+    "The Company may in its discretion and at its option terminate this Agreement at any time after the Minimum Period upon five days prior written notice to Maimon."
+   ],
+   "notice_spans": [],
+   "has_exception": false,
+   "expected_tier": "FLAG",
+   "expected_score": 80
+  },
+  {
+   "contract_id": "CUAD-390",
+   "rule_id": "GOVERNING_LAW",
+   "term_spans": [
+    "This Agreement shall be governed by and be                --------- ----                                            construed in accordance with the laws of the Province of Ontario, Canada."
+   ],
+   "notice_spans": [],
+   "has_exception": false,
+   "expected_tier": "ACCEPT",
+   "expected_score": 10
+  },
+  {
+   "contract_id": "CUAD-030",
+   "rule_id": "IP_ASSIGNMENT",
+   "term_spans": [
+    "If you wish to test market an item that we have not approved, then, so long as we have given you our prior written approval, you may do so for so long, and on such terms, that we mutually agree upon (a \"Test\"), and the item so tested, and all associated formulae, plans, and materials, will become our property.",
+    "You agree that all data that you collect from customers and potential customers in connection with the Franchised Business (\"Customer Data\") is deemed to be owned exclusively by us, and you also agree to provide the Customer Data to us at any time that we request as you to do so.",
+    "The Customer List is, and remains, our exclusive property, you hereby assign to us all rights you now have or hereafter may acquire in the Customer List.",
+    "All data pertaining to, derived from, or displayed at the Franchised Business (including without limitation data pertaining to or otherwise about Franchised Business customers) is and shall be our exclusive property, and we hereby grant you a royalty-free non-exclusive license to use that data during the Term of this Agreement."
+   ],
+   "notice_spans": [],
+   "has_exception": false,
+   "expected_tier": "FLAG",
+   "expected_score": 65
+  },
+  {
+   "contract_id": "CUAD-000",
+   "rule_id": "AUDIT_RIGHTS",
+   "term_spans": [],
+   "notice_spans": [],
+   "has_exception": false,
+   "expected_tier": "FLAG",
+   "expected_score": 55
+  },
+  {
+   "contract_id": "CUAD-150",
+   "rule_id": "NON_COMPETE",
+   "term_spans": [
+    "In the event that either (x) one Party shall transfer its entire interest in the Operating Company as permitted pursuant to this Agreement and the Operating Company shall remain a going concern after the closing of such transfer or (y) both Parties sell their interest in the Operating Company as permitted pursuant to this Agreement and the Operating Company shall remain a going concern after the closing of such transfer, then any Party which\n\n\n\n\n\nceases to own an interest in the Operating Company as a result of such transfer shall remain subject to the terms of this Article 7.2 for a period of ten (10) years after the date of such transfer.",
+    "After the Effective Date and as long as Igene and T&L continue to own an interest in the Operating Company, neither of the Parties shall, or shall cause or permit any of their Affiliates to, directly or indirectly, as stockholders, consultants, members, partners or in any other capacity, engage in any enterprise or business anywhere in the world, which (a) manufactures Astaxanthin or (b) develops, markets, or sells products falling within the Field of Agreement."
+   ],
+   "notice_spans": [],
+   "has_exception": true,
+   "expected_tier": "ACCEPT",
+   "expected_score": 15
+  },
+  {
+   "contract_id": "CUAD-000",
+   "rule_id": "NO_SOLICIT_EMPLOYEES",
+   "term_spans": [
+    "During the Term of this Agreement and for a period of                            twelve (12) months  thereafter,  the  Distributor (on                            behalf of itself,  each of its affiliates and each of                            their respective representatives) agrees that it will                            not  directly  or  indirectly  solicit  or  hire  any                            executive,  managerial  or technical  employee of the                            Company or any of its affiliates."
+   ],
+   "notice_spans": [],
+   "has_exception": false,
+   "expected_tier": "FLAG",
+   "expected_score": 60
+  },
+  {
+   "contract_id": "CUAD-150",
+   "rule_id": "MFN",
+   "term_spans": [
+    "The grant of licenses to any third parties shall be the prerogative of the Board provided that no such license shall be granted at terms more favorable to the third party than were offered to the member(s) of such Party."
+   ],
+   "notice_spans": [],
+   "has_exception": true,
+   "expected_tier": "REJECT",
+   "expected_score": 90
+  },
+  {
+   "contract_id": "CUAD-030",
+   "rule_id": "CHANGE_OF_CONTROL",
+   "term_spans": [
+    "You may not permit the Franchised Business to be operated, managed, directed, or controlled by any other person without our prior written consent.",
+    "The Owners may not enter into any shareholders' agreement, management agreement, voting trust or other arrangement that gives a third party the power to direct and control your affairs without our prior written consent."
+   ],
+   "notice_spans": [],
+   "has_exception": false,
+   "expected_tier": "FLAG",
+   "expected_score": 60
+  },
+  {
+   "contract_id": "CUAD-100",
+   "rule_id": "AUTO_RENEWAL",
+   "term_spans": [
+    "Thereafter, at the end of each renewal term, the Agreement shall renew for an additional two (2) years unless one party provides the other party with prior written notice of non-renewal at least sixty (60) days prior to the expiration of the then-current term.",
+    "Upon completion of the Initial Term, provided that the Reseller has achieved the Annual Milestones, the term of the Agreement shall be automatically renewed for an additional five (5) years."
+   ],
+   "notice_spans": [
+    "Thereafter, at the end of each renewal term, the Agreement shall renew for an additional two (2) years unless one party provides the other party with prior written notice of non-renewal at least sixty (60) days prior to the expiration of the then-current term."
+   ],
+   "has_exception": true,
+   "expected_tier": "FLAG",
+   "expected_score": 79
+  },
+  {
+   "contract_id": "CUAD-000",
+   "rule_id": "ANTI_ASSIGNMENT",
+   "term_spans": [
+    "No  assignment  of this  Agreement  or any  right                   accruing  hereunder  shall be made by the Distributor in whole                   or in part,  without the prior written consent of the Company,                   which  consent  shall  not  be  unreasonably  withheld.",
+    "In  the  event  either  party  (a)  becomes                   adjudicated insolvent,  (b) discontinues its business, (c) has                   voluntary of  involuntary  bankruptcy  proceedings  instituted                   against  it, or (d) makes an  assignment  for the  benefit  of                   creditors, the other party shall be entitled to terminate this                   Agreement effective immediately upon written notice."
+   ],
+   "notice_spans": [],
+   "has_exception": false,
+   "expected_tier": "FLAG",
+   "expected_score": 60
+  }
+ ]
+}

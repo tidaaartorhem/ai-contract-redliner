@@ -1,0 +1,168 @@
+{
+ "findings": {
+  "contract_count": 50,
+  "routes": {
+   "SEND_TO_LEGAL": 48,
+   "ESCALATE": 2
+  },
+  "approve_pct": 0.0,
+  "needs_legal_pct": 100.0,
+  "rule_table": {
+   "ANTI_ASSIGNMENT": {
+    "present": 40,
+    "present_pct": 80.0,
+    "accept": 14,
+    "flag": 36,
+    "reject": 0,
+    "flag_rate": 72.0
+   },
+   "AUDIT_RIGHTS": {
+    "present": 27,
+    "present_pct": 54.0,
+    "accept": 27,
+    "flag": 23,
+    "reject": 0,
+    "flag_rate": 46.0
+   },
+   "AUTO_RENEWAL": {
+    "present": 24,
+    "present_pct": 48.0,
+    "accept": 37,
+    "flag": 13,
+    "reject": 0,
+    "flag_rate": 26.0
+   },
+   "CHANGE_OF_CONTROL": {
+    "present": 13,
+    "present_pct": 26.0,
+    "accept": 37,
+    "flag": 13,
+    "reject": 0,
+    "flag_rate": 26.0
+   },
+   "GOVERNING_LAW": {
+    "present": 45,
+    "present_pct": 90.0,
+    "accept": 6,
+    "flag": 44,
+    "reject": 0,
+    "flag_rate": 88.0
+   },
+   "IP_ASSIGNMENT": {
+    "present": 14,
+    "present_pct": 28.0,
+    "accept": 36,
+    "flag": 14,
+    "reject": 0,
+    "flag_rate": 28.0
+   },
+   "LIABILITY_CAP": {
+    "present": 30,
+    "present_pct": 60.0,
+    "accept": 22,
+    "flag": 28,
+    "reject": 0,
+    "flag_rate": 56.0
+   },
+   "MFN": {
+    "present": 2,
+    "present_pct": 4.0,
+    "accept": 48,
+    "flag": 0,
+    "reject": 2,
+    "flag_rate": 4.0
+   },
+   "NON_COMPETE": {
+    "present": 16,
+    "present_pct": 32.0,
+    "accept": 41,
+    "flag": 9,
+    "reject": 0,
+    "flag_rate": 18.0
+   },
+   "NO_SOLICIT_EMPLOYEES": {
+    "present": 9,
+    "present_pct": 18.0,
+    "accept": 41,
+    "flag": 9,
+    "reject": 0,
+    "flag_rate": 18.0
+   },
+   "TERMINATION_CONVENIENCE": {
+    "present": 19,
+    "present_pct": 38.0,
+    "accept": 48,
+    "flag": 2,
+    "reject": 0,
+    "flag_rate": 4.0
+   },
+   "UNCAPPED_LIABILITY": {
+    "present": 9,
+    "present_pct": 18.0,
+    "accept": 41,
+    "flag": 9,
+    "reject": 0,
+    "flag_rate": 18.0
+   }
+  },
+  "most_flagged_rule": "GOVERNING_LAW",
+  "most_flagged_count": 44,
+  "uncapped_liability_contracts": 9,
+  "uncapped_liability_pct": 18.0,
+  "no_audit_rights_contracts": 23,
+  "non_ontario_governing_law_contracts": 44,
+  "low_or_unquantified_cap_contracts": 28,
+  "total_clause_spans": 488,
+  "assessed_playbook_spans": 470,
+  "exception_spans": 18,
+  "mean_overall_score": 61.9,
+  "effort_minutes": 2340,
+  "effort_hours": 39.0
+ },
+ "eval": {
+  "n": 36,
+  "tier_accuracy": 1.0,
+  "precision": 1.0,
+  "recall": 1.0
+ },
+ "eval_misses": [],
+ "config": {
+  "thresholds": {
+   "reject_bar": 85,
+   "flag_bar": 40
+  },
+  "route_bars": {
+   "escalate_score": 80,
+   "legal_score": 40
+  },
+  "contract_score_weights": {
+   "max_clause": 0.7,
+   "mean_clause": 0.3
+  },
+  "effort_minutes": {
+   "APPROVE": 10,
+   "SEND_TO_LEGAL": 45,
+   "ESCALATE": 90
+  },
+  "replay_date": "2026-11-06",
+  "tuning_note": "Thresholds grid-searched on the 36-pair golden set (reject_bar=85, flag_bar=40); tier_accuracy=1.0, precision=1.0, recall=1.0. Calibration only \u2014 the golden set is also the tuning set, so these are not held-out numbers."
+ },
+ "company": {
+  "name": "Harbourline Analytics Inc.",
+  "profile": "Fictional Toronto analytics firm. The contract queue is real (CUAD expert-labeled spans); the playbook is the company's own seeded positions.",
+  "fictional": true
+ },
+ "queue_meta": {
+  "source": "CUAD (Contract Understanding Atticus Dataset), Hendrycks et al. 2021",
+  "source_url": "https://github.com/TheAtticusProject/cuad",
+  "license": "CC BY 4.0",
+  "citation": "Hendrycks, Burns, Chen, Ball. CUAD: An Expert-Annotated NLP Dataset for Legal Contract Review. NeurIPS 2021. arXiv:2103.06268.",
+  "slice": "deterministic strided sample: every 10th contract, indices 0..490 (50 of 510)",
+  "clause_note": "Clause spans are the expert labels shipped with CUAD; only the 14 playbook-relevant categories are kept. Spans are capped at 2000 chars (2 spans truncated).",
+  "fetched_at": "2026-11-06",
+  "replay_date": "2026-11-06",
+  "count": 50,
+  "span_count": 488
+ },
+ "data_note": "Contracts: 50 real commercial contracts from CUAD (Contract Understanding Atticus Dataset, Hendrycks et al. 2021), deterministic strided sample (every 10th of 510), CC BY 4.0. Clause spans are the expert labels shipped with CUAD. The 12-rule playbook is seeded demo data for the fictional Harbourline Analytics Inc. desk. CUAD contracts are US SEC filings, so the Ontario-law playbook flags governing law on 44 of 50 \u2014 that is the corpus, not a bug."
+}

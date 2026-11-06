@@ -1,0 +1,126 @@
+{
+ "rules": [
+  {
+   "id": "LIABILITY_CAP",
+   "cuad_category": "Cap On Liability",
+   "title": "Liability cap must be at least 12 months' fees",
+   "stance": "Liability cap must be at least 12 months' fees",
+   "redline": "Cap each party's aggregate liability at the fees paid or payable in the 12 months before the claim; carve out only wilful misconduct and IP infringement.",
+   "fallback": "Accept a 6-month cap if the counterparty carries $2M+ E&O cover.",
+   "seeded": true
+  },
+  {
+   "id": "UNCAPPED_LIABILITY",
+   "cuad_category": "Uncapped Liability",
+   "title": "No uncapped liability except a capped carve-out",
+   "stance": "No uncapped liability except a capped carve-out",
+   "redline": "Delete the uncapped-liability carve-out; liability for confidentiality and IP breaches stays inside the cap.",
+   "fallback": "Cap carve-out exposure at 24 months' fees.",
+   "seeded": true
+  },
+  {
+   "id": "TERMINATION_CONVENIENCE",
+   "cuad_category": "Termination For Convenience",
+   "title": "Termination for convenience needs at least 30 days' notice",
+   "stance": "Termination for convenience needs at least 30 days' notice",
+   "redline": "Either party may terminate for convenience on 30 days' written notice.",
+   "fallback": "Accept 60 days if the counterparty funds wind-down.",
+   "seeded": true
+  },
+  {
+   "id": "GOVERNING_LAW",
+   "cuad_category": "Governing Law",
+   "title": "Governing law must be Ontario",
+   "stance": "Governing law must be Ontario",
+   "redline": "Governing law: Ontario; the courts of Toronto have exclusive jurisdiction.",
+   "fallback": "Accept the federal law of Canada with Toronto arbitration.",
+   "seeded": true
+  },
+  {
+   "id": "IP_ASSIGNMENT",
+   "cuad_category": "Ip Ownership Assignment",
+   "title": "IP in deliverables stays with Harbourline",
+   "stance": "IP in deliverables stays with Harbourline",
+   "redline": "IP in deliverables created for Harbourline is owned by Harbourline; counterparty IP stays with the counterparty; any licence-back is non-exclusive.",
+   "fallback": "Accept joint ownership only for jointly created background IP.",
+   "seeded": true
+  },
+  {
+   "id": "AUDIT_RIGHTS",
+   "cuad_category": "Audit Rights",
+   "title": "Harbourline must hold audit rights",
+   "stance": "Harbourline must hold audit rights",
+   "redline": "Harbourline may audit the counterparty's relevant books once per year on 30 days' notice.",
+   "fallback": "Accept an independent-auditor certificate in place of direct audit.",
+   "seeded": true
+  },
+  {
+   "id": "NON_COMPETE",
+   "cuad_category": "Non-Compete",
+   "title": "No non-compete unless stated carve-outs exist",
+   "stance": "No non-compete unless stated carve-outs exist",
+   "redline": "Delete the non-compete; replace with a 12-month non-solicit of Harbourline customers.",
+   "fallback": "Accept a 12-month, Ontario-only non-compete with a carve-out for pre-existing business.",
+   "seeded": true
+  },
+  {
+   "id": "NO_SOLICIT_EMPLOYEES",
+   "cuad_category": "No-Solicit Of Employees",
+   "title": "No employee non-solicit, or 12 months at most",
+   "stance": "No employee non-solicit, or 12 months at most",
+   "redline": "Delete the employee non-solicit; replace with a 12-month non-solicit limited to employees the counterparty introduced.",
+   "fallback": "Accept 12 months, employees only, no contractors.",
+   "seeded": true
+  },
+  {
+   "id": "MFN",
+   "cuad_category": "Most Favored Nation",
+   "title": "No most-favoured-nation clause, ever",
+   "stance": "No most-favoured-nation clause, ever",
+   "redline": "Delete the most-favoured-nation clause in full.",
+   "fallback": "No fallback. Escalate to legal.",
+   "seeded": true
+  },
+  {
+   "id": "CHANGE_OF_CONTROL",
+   "cuad_category": "Change Of Control",
+   "title": "Change of control must not trigger termination or consent",
+   "stance": "Change of control must not trigger termination or consent",
+   "redline": "Change of control does not trigger termination or consent; Harbourline may assign on a change of control.",
+   "fallback": "Accept notice-only on change of control, no consent.",
+   "seeded": true
+  },
+  {
+   "id": "AUTO_RENEWAL",
+   "cuad_category": "Renewal Term / Notice Period To Terminate Renewal",
+   "title": "Auto-renewal: 12-month term max, 60-day opt-out max",
+   "stance": "Auto-renewal: 12-month term max, 60-day opt-out max",
+   "redline": "Renewal is by written agreement only; no automatic renewal. If auto-renewal is retained, term 12 months and opt-out notice 30 days.",
+   "fallback": "Accept a 12-month auto-renewal with a 60-day opt-out notice.",
+   "seeded": true
+  },
+  {
+   "id": "ANTI_ASSIGNMENT",
+   "cuad_category": "Anti-Assignment",
+   "title": "Harbourline must be free to assign on change of control or to an affiliate",
+   "stance": "Harbourline must be free to assign on change of control or to an affiliate",
+   "redline": "Either party may assign on a change of control or to an affiliate without consent; other assignments need consent not to be unreasonably withheld.",
+   "fallback": "Accept consent not to be unreasonably withheld or delayed.",
+   "seeded": true
+  }
+ ],
+ "categories": {
+  "LIABILITY_CAP": "Liability cap",
+  "UNCAPPED_LIABILITY": "Uncapped liability",
+  "TERMINATION_CONVENIENCE": "Termination for convenience",
+  "GOVERNING_LAW": "Governing law",
+  "IP_ASSIGNMENT": "IP ownership / assignment",
+  "AUDIT_RIGHTS": "Audit rights",
+  "NON_COMPETE": "Non-compete",
+  "NO_SOLICIT_EMPLOYEES": "No-solicit of employees",
+  "MFN": "Most-favoured-nation",
+  "CHANGE_OF_CONTROL": "Change of control",
+  "AUTO_RENEWAL": "Auto-renewal",
+  "ANTI_ASSIGNMENT": "Anti-assignment"
+ }
+}
