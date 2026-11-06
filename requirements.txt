@@ -1,0 +1,5 @@
+# ResolveDesk: deterministic LangGraph pipeline that resolves L1 support
+# tickets from a known-issue playbook. The pipeline itself uses langgraph
+# when installed and falls back to the same nodes run sequentially.
+pytest>=8.0
+langgraph>=0.2
