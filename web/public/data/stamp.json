@@ -1,0 +1,6 @@
+{
+ "repo": "tidaaartorhem/ai-contract-redliner",
+ "git_sha": "b6de7b4",
+ "built_utc": "2026-11-06T13:59:33Z",
+ "pipeline": "redlinedesk LangGraph intake->extract->match->score->draft->gate (zero LLM calls)"
+}

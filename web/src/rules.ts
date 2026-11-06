@@ -178,7 +178,7 @@ function assessGoverningLaw(spans: string[], thresholds: Thresholds): Assessment
   if (low.includes("ontario")) {
     return result("GOVERNING_LAW", 10, 0, ["governing law is Ontario, as the playbook requires"], thresholds, true);
   }
-  for (const prov of CANADA_PROVINCES) {
+  for (const prov of [...CANADA_PROVINCES].sort()) {
     if (low.includes(prov)) {
       return result("GOVERNING_LAW", 55, 0, [`governing law is ${prov.replace(/\b\w/g, (c) => c.toUpperCase())} (Canada, but not Ontario)`], thresholds, true);
     }
@@ -186,7 +186,7 @@ function assessGoverningLaw(spans: string[], thresholds: Thresholds): Assessment
   if (low.includes("canada")) {
     return result("GOVERNING_LAW", 55, 0, ["governing law is Canada (not Ontario specifically)"], thresholds, true);
   }
-  for (const st of US_STATES) {
+  for (const st of [...US_STATES].sort()) {
     if (low.includes(st)) {
       return result("GOVERNING_LAW", 80, 0, [`governing law is ${st.replace(/\b\w/g, (c) => c.toUpperCase())} (US state, not Ontario)`], thresholds, true);
     }
@@ -194,7 +194,7 @@ function assessGoverningLaw(spans: string[], thresholds: Thresholds): Assessment
   if (/\blaws of the state\b/.test(low) || low.includes("state of")) {
     return result("GOVERNING_LAW", 80, 0, ["governing law is a US state (not Ontario)"], thresholds, true);
   }
-  for (const j of OTHER_JURISDICTIONS) {
+  for (const j of [...OTHER_JURISDICTIONS].sort()) {
     if (low.includes(j)) {
       return result("GOVERNING_LAW", 80, 0, [`governing law is ${j.replace(/\b\w/g, (c) => c.toUpperCase())} (not Ontario)`], thresholds, true);
     }

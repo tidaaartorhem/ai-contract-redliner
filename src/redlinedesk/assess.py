@@ -186,7 +186,7 @@ def assess_governing_law(spans: list[str], rule: dict) -> dict:
         return _result("GOVERNING_LAW", 10, 0,
                        ["governing law is Ontario, as the playbook requires"],
                        rule["redline"], rule["fallback"])
-    for prov in CANADA_PROVINCES:
+    for prov in sorted(CANADA_PROVINCES):
         if prov in low:
             return _result("GOVERNING_LAW", 55, 0,
                            [f"governing law is {prov.title()} (Canada, but not Ontario)"],
@@ -195,7 +195,7 @@ def assess_governing_law(spans: list[str], rule: dict) -> dict:
         return _result("GOVERNING_LAW", 55, 0,
                        ["governing law is Canada (not Ontario specifically)"],
                        rule["redline"], rule["fallback"])
-    for st in US_STATES:
+    for st in sorted(US_STATES):
         if st in low:
             return _result("GOVERNING_LAW", 80, 0,
                            [f"governing law is {st.title()} (US state, not Ontario)"],
@@ -204,7 +204,7 @@ def assess_governing_law(spans: list[str], rule: dict) -> dict:
         return _result("GOVERNING_LAW", 80, 0,
                        ["governing law is a US state (not Ontario)"],
                        rule["redline"], rule["fallback"])
-    for j in OTHER_JURISDICTIONS:
+    for j in sorted(OTHER_JURISDICTIONS):
         if j in low:
             return _result("GOVERNING_LAW", 80, 0,
                            [f"governing law is {j.title()} (not Ontario)"],

@@ -614,7 +614,7 @@
      "adjustment": 0
     },
     "evidence": [
-     "governing law is Victoria (not Ontario)"
+     "governing law is Australia (not Ontario)"
     ],
     "present": true,
     "spans": [
@@ -785,7 +785,7 @@
     "tier": "FLAG",
     "score": 80,
     "evidence": [
-     "governing law is Victoria (not Ontario)"
+     "governing law is Australia (not Ontario)"
     ],
     "redline": "Governing law: Ontario; the courts of Toronto have exclusive jurisdiction.",
     "fallback": "Accept the federal law of Canada with Toronto arbitration."
