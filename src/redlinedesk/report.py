@@ -47,6 +47,7 @@ def findings(state: dict) -> dict:
     scores = [p["overall_score"] for p in pack]
     mean_score = round(sum(scores) / len(scores), 1) if scores else 0.0
     total_spans = sum(len(cl["spans"]) for p in pack for cl in p["clauses"])
+    corpus_spans = state["queue_meta"]["span_count"]  # 488: incl. 18 exception spans used as context
 
     return {
         "contract_count": n,
@@ -61,7 +62,9 @@ def findings(state: dict) -> dict:
         "no_audit_rights_contracts": no_audit,
         "non_ontario_governing_law_contracts": non_ontario,
         "low_or_unquantified_cap_contracts": low_caps,
-        "total_clause_spans": total_spans,
+        "total_clause_spans": corpus_spans,
+        "assessed_playbook_spans": total_spans,
+        "exception_spans": corpus_spans - total_spans,
         "mean_overall_score": mean_score,
         "effort_minutes": total_minutes,
         "effort_hours": round(total_minutes / 60, 1),
